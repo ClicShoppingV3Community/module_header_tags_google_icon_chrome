@@ -1,0 +1,2 @@
+module_header_tags_icon_chrome_title = Souhaitez-vous installer l\'icone pour Chrome mobile ?
+module_header_tags_icon_chrome_description = Installer l\'icone pour Chrome modbile
