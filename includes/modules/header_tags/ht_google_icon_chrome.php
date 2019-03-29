@@ -35,7 +35,7 @@
     public function execute() {
       $CLICSHOPPING_Template = Registry::get('Template');
 
-      $CLICSHOPPING_Template->addBlock('<link rel="icon" sizes="192x192" href="' . MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_LINK . '">' . "\n", $this->group);
+      $CLICSHOPPING_Template->addBlock('<link rel="icon" sizes="192x192" href="' . $CLICSHOPPING_Template->getDirectoryTemplateImages() . MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_LINK . '">' . "\n", $this->group);
     }
 
     public function isEnabled() {
@@ -64,7 +64,7 @@
       $CLICSHOPPING_Db->save('configuration', [
           'configuration_title' => 'Please insert the relative link to find the icon',
           'configuration_key' => 'MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_LINK',
-          'configuration_value' => 'sources/template/images/logos/others/logo_clicshopping_small.png',
+          'configuration_value' => 'logos/others/logo_clicshopping_small.png',
           'configuration_description' => 'Insert the relative link to find the icon 192x192',
           'configuration_group_id' => '6',
           'sort_order' => '21',
