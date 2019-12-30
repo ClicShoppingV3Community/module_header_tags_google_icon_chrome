@@ -70,7 +70,7 @@
       $CLICSHOPPING_Db->save('configuration', [
           'configuration_title' => 'Please insert the relative link to find the icon',
           'configuration_key' => 'MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_LINK',
-          'configuration_value' => 'logos/others/logo_clicshopping_small.png',
+          'configuration_value' => 'logos/others/logo_clicshopping_192.webp',
           'configuration_description' => 'Insert the relative link to find the icon 192x192',
           'configuration_group_id' => '6',
           'sort_order' => '21',
