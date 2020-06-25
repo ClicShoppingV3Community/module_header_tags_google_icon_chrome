@@ -1,2 +1,2 @@
-module_header_tags_icon_chrome_title = Do you want install the icon for chrome ?
+module_header_tags_icon_chrome_title = Do you want to install the icon for chrome ?
 module_header_tags_icon_chrome_description = install the icon for chrome
