@@ -14,8 +14,8 @@
 
   class ht_google_icon_chrome
   {
-    public $code;
-    public $group;
+    public string $code;
+    public string $group;
     public string $title;
     public string $description;
     public ?int $sort_order = 0;
@@ -28,7 +28,7 @@
       $this->title = CLICSHOPPING::getDef('module_header_tags_icon_chrome_title');
       $this->description = CLICSHOPPING::getDef('module_header_tags_icon_chrome_description');
 
-      if (defined('MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_STATUS')) {
+      if (\defined('MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_STATUS')) {
         $this->sort_order = MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_SORT_ORDER;
         $this->enabled = (MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_STATUS == 'True');
       }
@@ -48,7 +48,7 @@
 
     public function check()
     {
-      return defined('MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_STATUS');
+      return \defined('MODULE_HEADER_TAGS_GOOGLE_ICON_CHROME_STATUS');
     }
 
     public function install()
